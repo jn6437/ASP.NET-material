@@ -15,6 +15,11 @@ namespace Vidly.Controllers
         public ViewResult Random()
         {
             var movie = new Movie() { Name = "Shart" };
+
+            //where does movie object go in the view result?
+            //var viewResult = new ViewResult();
+            //viewResult.ViewData.Model === movie;
+
             return View(movie); 
             //return new ViewResult();
 
